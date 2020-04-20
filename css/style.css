@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Container {
+  width: 100%;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 2fr (1fr)[10] 2fr;
+      grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+  grid-auto-rows: auto;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  background-color: whitesmoke;
+}
+
+.Container header {
+  position: absolute;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  width: 100%;
+  margin: 10px 0;
+  min-width: 0;
+  color: #f0e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 9;
+}
+
+.Container header nav {
+  margin-left: auto;
+}
+
+.Container header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.Container header nav ul li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  text-align: center;
+}
+
+.Container header nav ul li a {
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.Container header nav ul li a:hover {
+  color: yellow;
+  -webkit-text-decoration: yellow;
+          text-decoration: yellow;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: yellow;
+}
+
+.Container header nav ul li a:active {
+  color: goldenrod;
+  background-color: transparent;
+}
+
+.Container header #logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.Container #myCarousel {
+  grid-column: 1/-1;
+  width: 100%;
+  height: 97vh;
+}
+
+.Container #myCarousel .carousel-inner .item img {
+  height: 97vh;
+}
+
+.Container #myCarousel .carousel-inner .item .carousel-caption p {
+  font-size: 54px;
+}
+
+.Container .content2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.Container .content3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px;
+}
+
+.Container .content3 .s1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 3rem;
+}
+
+.Container .content3 .s1 h3 {
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+.Container .content3 .s1 p {
+  padding-right: 20px;
+}
+
+.Container .content3 .s1 ul {
+  list-style: none;
+}
+
+.Container .content3 .s1 ul li i {
+  color: #2ec070;
+  margin-right: 5px;
+}
+
+.Container .content3 .s1 button {
+  background-color: #2ec070;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: .5rem;
+  border: 1px solid #2ec070;
+}
+
+.Container .content3 .s1 button:hover {
+  background-color: whitesmoke;
+  color: #2ec070;
+  border: 1px solid #2ec070;
+}
+
+.Container .content3 .s2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url(./img/orange.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.Container .content4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#414040), to(rgba(51, 51, 51, 0.5))), url(./img/apple-4833764_1280.jpg) no-repeat;
+  background: linear-gradient(#414040, rgba(51, 51, 51, 0.5)), url(./img/apple-4833764_1280.jpg) no-repeat;
+  background-size: cover;
+  grid-column: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (1fr)[10] 2fr;
+      grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+  grid-auto-rows: auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.Container .content4 .ContainerStep {
+  width: 100%;
+  color: whitesmoke;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.Container .content4 .ContainerStep h1 {
+  padding: 20px 0px;
+  padding-top: 0;
+}
+
+.Container .content4 .ContainerStep .steps {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.Container .content4 .ContainerStep .steps .step {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Container .content4 .ContainerStep .steps .step a {
+  font-size: 30px;
+}
+
+.Container .content4 .ContainerStep .steps .step a i {
+  background-color: whitesmoke;
+  color: #7e337e;
+  border-radius: 50%;
+  padding: 18px;
+  border: 1px solid #7e337e;
+}
+
+.Container .content4 .ContainerStep .steps .step a i:hover {
+  background-color: #7e337e;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.Container .content4 .ContainerStep .steps .step h3 {
+  font-weight: bold;
+}
+
+.Container .content5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .content5 .Services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 20px;
+}
+
+.Container .content6 {
+  grid-column: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (1fr)[10] 2fr;
+      grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+  grid-auto-rows: auto;
+  text-align: center;
+  background-color: #1e8f80;
+}
+
+.Container .content6 .slide {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+}
+
+.Container .content6 .slide .facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Container .content6 .slide .facts .fact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Container .content7 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  margin: 20px 0px;
+}
+
+.Container .content7 .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .content7 .slide .garllery {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.Container .content7 .slide .garllery img {
+  width: 300px;
+  height: 200px;
+}
+
+.Container .content8 {
+  grid-column: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (1fr)[10] 2fr;
+      grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+  grid-auto-rows: auto;
+  background-color: #c1cecc;
+}
+
+.Container .content8 .slide {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .content8 .slide .Farmers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.Container .content8 .slide .Farmers .farmer img {
+  width: 300px;
+}
+
+.Container .content9 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+}
+
+.Container footer {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+}
+
+@media screen and (max-width: 900px) {
+  .Container header {
+    display: none;
+  }
+  .Container #myCarousel {
+    height: 70vh;
+  }
+  .Container #myCarousel .carousel-inner .item img {
+    height: 70vh;
+  }
+  .Container #myCarousel .carousel-inner .item .carousel-caption {
+    margin-bottom: 70px;
+  }
+  .Container #myCarousel .carousel-inner .item .carousel-caption h3 {
+    font-size: 20px;
+  }
+  .Container #myCarousel .carousel-inner .item .carousel-caption p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
