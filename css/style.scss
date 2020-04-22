@@ -5,6 +5,7 @@ $colorSection2: rgb(46, 192, 112);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .Container {
@@ -307,8 +308,8 @@ $colorSection2: rgb(46, 192, 112);
                 row-gap: 20px;
 
                 img {
-                    width: 310px;
-                    height: 300px;
+                    width: 100%;
+                    height: 250px;
                 }
             }
         }
@@ -341,23 +342,20 @@ $colorSection2: rgb(46, 192, 112);
                 width: 100%;
                 column-gap: 18px;
 
-
-
                 .farmer {
                     width: 100%;
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 250px auto;
 
-                    img {
-
-                        flex: 30%;
-                        max-width: 100%;
-                        max-height: 300px;
+                    & img {
+                        grid-row: 1;
+                        width: 100%;
+                        height: 250px;
                     }
 
                     & .info {
+                        grid-row: 2;
                         display: flex;
                         flex-direction: column;
                         padding: 5px 0px;
@@ -525,7 +523,7 @@ $colorSection2: rgb(46, 192, 112);
                     justify-content: space-between;
                     align-content: center;
 
-                   
+
 
                     .row {
                         margin-bottom: 10px;
@@ -569,7 +567,36 @@ $colorSection2: rgb(46, 192, 112);
 
 }
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+    .Container {
+        .content7 {
+            .slide {
+                .garllery {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                    row-gap: 20px;
+                }
+            }
+        }
+
+        .content8 {
+            .slide {
+                .Farmers {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    column-gap: 20px;
+                    row-gap: 20px;
+
+
+                }
+            }
+        }
+
+        footer {
+            font-size: 12px;
+        }
+    }
+}
 
 @media screen and (max-width:900px) {
     .Container {
@@ -602,7 +629,164 @@ $colorSection2: rgb(46, 192, 112);
             }
         }
 
+        .content2 {
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        .content3 {
+            .s1 {
+                text-align: justify;
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                p {
+                    padding: 0px;
+
+                }
+            }
+
+            .s2 {
+                display: none;
+            }
+        }
+
+        .content4 {
+            .ContainerStep {
+
+                .steps {
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    font-size: 13px;
+
+                    .step {
+                        flex: 0 0 50%;
+                    }
+                }
+            }
+        }
+
+        .content5 {
+            .Services {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+                column-gap: 20px;
+                row-gap: 30px;
+                font-size: 13px;
+            }
+        }
+        .content6 {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+        }
+
+        footer {
+
+            .grids {
+                grid-template-columns: auto;
+                grid-template-rows: repeat(3, auto);
+
+                .grid3 {
+                    form {
+                        .row {
+                            .col1 {
+
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-@media screen and (max-width:500px) {}
+@media screen and (max-width:600px) {
+    .Container {
+        .content4 {
+            .ContainerStep {
+
+                .steps {
+                    flex-wrap: wrap;
+
+                    .step {
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+        }
+
+        .content5 {
+            .Services {
+                display: grid;
+                grid-template-rows: repeat(6, 1fr);
+                grid-template-columns: auto;
+                text-align: center;
+                row-gap: 20px;
+            }
+        }
+
+        .content6 {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+        }
+
+        .content7 {
+            .slide {
+                .garllery {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(4, 1fr);
+                    row-gap: 20px;
+                }
+            }
+        }
+
+        .content8 {
+            .slide {
+
+                .Farmers {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(4, 1fr);
+                    row-gap: 20px;
+                    text-align: center;
+
+
+                    .farmer:nth-child(1) {
+                        grid-row: 1;
+                    }
+
+                    .farmer:nth-child(2) {
+                        grid-row: 2;
+                    }
+
+                    .farmer:nth-child(3) {
+                        grid-row: 3;
+                    }
+
+                    .farmer:nth-child(4) {
+                        grid-row: 4;
+                    }
+
+                }
+            }
+        }
+    }
+}

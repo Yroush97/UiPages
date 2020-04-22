@@ -390,8 +390,8 @@
 }
 
 .Container .content7 .slide .garllery img {
-  width: 310px;
-  height: 300px;
+  width: 100%;
+  height: 250px;
 }
 
 .Container .content8 {
@@ -437,29 +437,23 @@
 
 .Container .content8 .slide .Farmers .farmer {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 250px auto;
+      grid-template-rows: 250px auto;
 }
 
 .Container .content8 .slide .Farmers .farmer img {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  max-width: 100%;
-  max-height: 300px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 250px;
 }
 
 .Container .content8 .slide .Farmers .farmer .info {
+  -ms-grid-row: 2;
+  grid-row: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,6 +688,28 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .Container .content7 .slide .garllery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+  .Container .content8 .slide .Farmers {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 20px;
+  }
+  .Container footer {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .Container header {
     display: none;
@@ -712,6 +728,121 @@
   }
   .Container #myCarousel .carousel-inner .item .carousel-caption p {
     font-size: 16px;
+  }
+  .Container .content2 h1 {
+    font-size: 20px;
+  }
+  .Container .content3 .s1 {
+    text-align: justify;
+  }
+  .Container .content3 .s1 h3 {
+    font-size: 16px;
+  }
+  .Container .content3 .s1 p {
+    padding: 0px;
+  }
+  .Container .content3 .s2 {
+    display: none;
+  }
+  .Container .content4 .ContainerStep .steps {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+  }
+  .Container .content4 .ContainerStep .steps .step {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .Container .content5 .Services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    row-gap: 30px;
+    font-size: 13px;
+  }
+  .Container .content6 h1 {
+    font-size: 36px;
+  }
+  .Container .content6 p {
+    font-size: 13px;
+  }
+  .Container footer .grids {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+  }
+  .Container footer .grids .grid3 form .row .col1 {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Container .content4 .ContainerStep .steps {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Container .content4 .ContainerStep .steps .step {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .Container .content5 .Services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    text-align: center;
+    row-gap: 20px;
+  }
+  .Container .content6 h1 {
+    font-size: 20px;
+  }
+  .Container .content6 p {
+    font-size: 10px;
+  }
+  .Container .content7 .slide .garllery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+  .Container .content8 .slide .Farmers {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    text-align: center;
+  }
+  .Container .content8 .slide .Farmers .farmer:nth-child(1) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .Container .content8 .slide .Farmers .farmer:nth-child(2) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .Container .content8 .slide .Farmers .farmer:nth-child(3) {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .Container .content8 .slide .Farmers .farmer:nth-child(4) {
+    -ms-grid-row: 4;
+    grid-row: 4;
   }
 }
 /*# sourceMappingURL=style.css.map */
