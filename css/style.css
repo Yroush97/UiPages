@@ -102,11 +102,15 @@
 .Container #myCarousel {
   grid-column: 1/-1;
   width: 100%;
-  height: 97vh;
+  height: 90vh;
 }
 
 .Container #myCarousel .carousel-inner .item img {
-  height: 97vh;
+  height: 90vh;
+}
+
+.Container #myCarousel .carousel-inner .item .carousel-caption {
+  text-shadow: 1px 1px 2px #ffffff;
 }
 
 .Container #myCarousel .carousel-inner .item .carousel-caption p {
@@ -136,7 +140,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0px;
+  padding: 30px 0px;
 }
 
 .Container .content3 .s1 {
@@ -199,6 +203,7 @@
   grid-auto-rows: auto;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  padding: 30px 0px;
 }
 
 .Container .content4 .ContainerStep {
@@ -220,7 +225,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px;
 }
 
 .Container .content4 .ContainerStep h1 {
@@ -280,6 +284,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px 0px;
 }
 
 .Container .content5 .Services {
@@ -304,12 +309,19 @@
   grid-auto-rows: auto;
   text-align: center;
   background-color: #1e8f80;
+  padding: 20px 0px;
+  color: white;
 }
 
 .Container .content6 .slide {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2/12;
+}
+
+.Container .content6 .slide h1 {
+  text-shadow: 1px 1px 2px #ffffff;
+  padding: 10px 0px;
 }
 
 .Container .content6 .slide .facts {
@@ -323,7 +335,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 20px 0px;
+  padding: 10px 0px;
   font-size: 17px;
   font-weight: bold;
 }
@@ -357,6 +369,11 @@
           align-items: center;
 }
 
+.Container .content7 .slide h1 {
+  padding: 20px 0px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
 .Container .content7 .slide .garllery {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -367,14 +384,14 @@
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
   row-gap: 20px;
 }
 
 .Container .content7 .slide .garllery img {
-  width: 300px;
-  height: 200px;
+  width: 310px;
+  height: 300px;
 }
 
 .Container .content8 {
@@ -385,12 +402,44 @@
       grid-template-columns: 2fr repeat(10, 1fr) 2fr;
   grid-auto-rows: auto;
   background-color: #c1cecc;
+  padding: 20px 0px;
 }
 
 .Container .content8 .slide {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2/12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  text-align: center;
+}
+
+.Container .content8 .slide h1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: 20px 0px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Container .content8 .slide .Farmers {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  -webkit-column-gap: 18px;
+          column-gap: 18px;
+}
+
+.Container .content8 .slide .Farmers .farmer {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,37 +447,152 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Container .content8 .slide .Farmers {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Container .content8 .slide .Farmers .farmer img {
-  width: 300px;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.Container .content8 .slide .Farmers .farmer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px 0px;
+}
+
+.Container .content8 .slide .Farmers .farmer .info .social i {
+  padding: 0px 5px;
+  color: #2ec070;
 }
 
 .Container .content9 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2/12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+  text-align: center;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.Container .content9 h1 {
+  margin: 10px 0px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Container .content9 p {
+  margin: 10px 0px;
+}
+
+.Container .content9 .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  margin: 20px 0px;
+}
+
+.Container .content9 .inputs input {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding-left: 10px;
+}
+
+.Container .content9 .inputs button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #9c2323;
 }
 
 .Container footer {
+  grid-column: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (1fr)[10] 2fr;
+      grid-template-columns: 2fr repeat(10, 1fr) 2fr;
+  grid-auto-rows: auto;
+  background-color: #0f0f0f;
+  padding: 20px 0px;
+}
+
+.Container footer .grids {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2/12;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+  color: white;
+}
+
+.Container footer .grids .grid1 {
+  color: white;
+}
+
+.Container footer .grids .grid1 h4 {
+  padding-bottom: 20px;
+}
+
+.Container footer .grids .grid1 ul {
+  list-style: none;
+}
+
+.Container footer .grids .grid1 ul li {
+  padding: 5px 0px;
+}
+
+.Container footer .grids .grid1 ul li i {
+  padding-right: 5px;
+}
+
+.Container footer .grids .grid1 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.Container footer .grids .grid1 ul li a:hover {
+  color: #7e337e;
+}
+
+.Container footer .grids .grid2 h4 {
+  padding-bottom: 20px;
+}
+
+.Container footer .grids .grid3 h4 {
+  padding-bottom: 20px;
+}
+
+.Container footer p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2/12;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {
