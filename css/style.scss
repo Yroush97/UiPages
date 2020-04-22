@@ -96,6 +96,7 @@ $colorSection2: rgb(46, 192, 112);
 
                 .carousel-caption {
                     text-shadow: 1px 1px 2px #ffffff;
+
                     p {
                         font-size: 54px;
 
@@ -421,6 +422,9 @@ $colorSection2: rgb(46, 192, 112);
         background-color: rgb(15, 15, 15);
         padding: 20px 0px;
 
+        p {
+            color: rgb(141, 140, 140);
+        }
 
         .grids {
             grid-column: 2/12;
@@ -429,6 +433,8 @@ $colorSection2: rgb(46, 192, 112);
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, auto);
             color: white;
+            column-gap: 30px;
+            margin-bottom: 30px;
 
             .grid1 {
                 color: white;
@@ -465,11 +471,91 @@ $colorSection2: rgb(46, 192, 112);
                 h4 {
                     padding-bottom: 20px;
                 }
+
+                table {
+                    width: 100%;
+
+                    tbody {
+                        width: 100%;
+
+                        tr {
+                            border-bottom: 1px solid #ffffff;
+
+                            td {
+                                padding: 5px 0px;
+                            }
+
+                        }
+
+                    }
+                }
+
+                .part2 {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    h4 {
+                        padding-bottom: 5px;
+                    }
+
+                    .social {
+                        a {
+                            padding: 0px 8px;
+                            color: #ffffff;
+
+                            &:hover {
+                                color: rgb(126, 51, 126);
+                            }
+                        }
+                    }
+                }
             }
 
             .grid3 {
                 h4 {
                     padding-bottom: 20px;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+
+                   
+
+                    .row {
+                        margin-bottom: 10px;
+                    }
+
+                    .form2 {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+
+                        input {
+                            margin-bottom: 10px;
+                        }
+
+                        & textarea {
+                            height: 90px;
+                        }
+
+
+
+                    }
+
+                    button {
+                        margin-top: 10px;
+                        background-color: rgb(30, 143, 128);
+                        border-color: rgb(30, 143, 128);
+
+
+                    }
+
                 }
             }
         }

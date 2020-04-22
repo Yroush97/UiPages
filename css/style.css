@@ -534,6 +534,10 @@
   padding: 20px 0px;
 }
 
+.Container footer p {
+  color: #8d8c8c;
+}
+
 .Container footer .grids {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
@@ -547,6 +551,9 @@
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   color: white;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-bottom: 30px;
 }
 
 .Container footer .grids .grid1 {
@@ -582,8 +589,100 @@
   padding-bottom: 20px;
 }
 
+.Container footer .grids .grid2 table {
+  width: 100%;
+}
+
+.Container footer .grids .grid2 table tbody {
+  width: 100%;
+}
+
+.Container footer .grids .grid2 table tbody tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+.Container footer .grids .grid2 table tbody tr td {
+  padding: 5px 0px;
+}
+
+.Container footer .grids .grid2 .part2 {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Container footer .grids .grid2 .part2 h4 {
+  padding-bottom: 5px;
+}
+
+.Container footer .grids .grid2 .part2 .social a {
+  padding: 0px 8px;
+  color: #ffffff;
+}
+
+.Container footer .grids .grid2 .part2 .social a:hover {
+  color: #7e337e;
+}
+
 .Container footer .grids .grid3 h4 {
   padding-bottom: 20px;
+}
+
+.Container footer .grids .grid3 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.Container footer .grids .grid3 form .row {
+  margin-bottom: 10px;
+}
+
+.Container footer .grids .grid3 form .form2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Container footer .grids .grid3 form .form2 input {
+  margin-bottom: 10px;
+}
+
+.Container footer .grids .grid3 form .form2 textarea {
+  height: 90px;
+}
+
+.Container footer .grids .grid3 form button {
+  margin-top: 10px;
+  background-color: #1e8f80;
+  border-color: #1e8f80;
 }
 
 .Container footer p {
