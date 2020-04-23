@@ -597,25 +597,25 @@ header #logo {
   padding-bottom: 20px;
 }
 
-.Container footer .grids .grid1 #minu {
-  list-style: none;
+.Container footer .grids .grid1 ul {
+  list-style: none !important;
 }
 
-.Container footer .grids .grid1 #minu li {
+.Container footer .grids .grid1 ul li {
   padding: 5px 0px;
 }
 
-.Container footer .grids .grid1 #minu li i {
+.Container footer .grids .grid1 ul li i {
   padding-right: 5px;
 }
 
-.Container footer .grids .grid1 #minu li a {
-  text-decoration: none;
-  color: white;
+.Container footer .grids .grid1 ul li a {
+  color: white !important;
+  text-decoration: none !important;
 }
 
-.Container footer .grids .grid1 #minu li a:hover {
-  color: #7e337e;
+.Container footer .grids .grid1 ul li a:hover {
+  color: #7e337e !important;
 }
 
 .Container footer .grids .grid2 h4 {

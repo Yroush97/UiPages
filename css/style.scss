@@ -477,11 +477,10 @@ header {
                     padding-bottom: 20px;
                 }
 
-                #minu {
-                    list-style: none;
+                ul {
+                    list-style: none !important;
 
                     & li {
-
                         padding: 5px 0px;
 
                         & i {
@@ -490,11 +489,12 @@ header {
                         }
 
                         & a {
-                            text-decoration: none;
-                            color: white;
+                            color: white !important;
+                            text-decoration: none !important;
+
 
                             &:hover {
-                                color: rgb(126, 51, 126);
+                                color: rgb(126, 51, 126) !important;
                             }
                         }
                     }
