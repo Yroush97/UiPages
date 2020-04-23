@@ -12,25 +12,28 @@
 </head>
 
 <body>
-    <div class="Container">
-        <header>
-            <div id="logo" class="h1">
-                Logo
+    <header id="head">
+        <div id="logo" class="h1">
+            Logo
+        </div>
+        <nav class="h1">
+            <ul id="minu">
+                <li><a href="#myCarousel">MAIN</a></li>
+                <li><a href="#page-1">ABOUT</a></li>
+                <li><a href="#page-3">OurWork</a></li>
+                <li><a href="#page-4">SERVICES</a></li>
+                <li><a href="#page-7">Farmers</a></li>
+                <li><a href="#page-8">CONTACT</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <nav class="h1">
-                <ul>
-                    <li><a href="#myCarousel">MAIN</a></li>
-                    <li><a href="#content2">ABOUT</a></li>
-                    <li><a href="#">Our Work</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">Farmers</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        </nav>
+    </header>
+    <scroll-container class="Container">
+        <scroll-page id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -66,12 +69,12 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </scroll-page>
 
-        <div class="content2">
+        <scroll-page id="page-1" class="content2">
             <h1>Few Words About Our Farm</h1>
-        </div>
-        <div class="content3">
+        </scroll-page>
+        <scroll-page id="page-2" class="content3">
 
             <div class="s1">
                 <h3>Welcome To Our Organic Fruit - we server all types of seasonal fruits</h3>
@@ -94,9 +97,9 @@
 
             </div>
 
-        </div>
+        </scroll-page>
 
-        <div class="content4">
+        <scroll-page id="page-3" class="content4">
 
             <div class="ContainerStep">
                 <h1>How We Work</h1>
@@ -130,8 +133,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content5">
+        </scroll-page>
+        <scroll-page id="page-4" class="content5">
 
             <h1>Our Services</h1>
             <div class="Services">
@@ -190,8 +193,8 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="content6">
+        </scroll-page>
+        <scroll-page id="page-5" class="content6">
             <div class="slide">
                 <h1>Agricultural Facts</h1>
                 <div class="facts">
@@ -214,8 +217,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content7">
+        </scroll-page>
+        <scroll-page id="page-6" class="content7">
             <div class="slide">
                 <h1>Our Gallery</h1>
                 <div class="garllery">
@@ -229,8 +232,8 @@
                     <img src="./css/img/lemon-4954844_1280.jpg" alt="fruit" />
                 </div>
             </div>
-        </div>
-        <div class="content8">
+        </scroll-page>
+        <scroll-page id="page-7" class="content8">
             <div class="slide">
                 <h1>Our Farmers</h1>
                 <div class="Farmers">
@@ -285,8 +288,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content9">
+        </scroll-page>
+        <scroll-page id="page-8" class="content9">
             <h1>Subscribe With Us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem a eveniet minus nesciunt nostrum ad,
                 et earum veritatis similique pariatur dolore dolorem eum maiores tempore ex quo quia, voluptatum fuga
@@ -297,7 +300,7 @@
                 <button type="submit">subscribe</button>
             </div>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit <a>Accusamus unde</a></span>
-        </div>
+        </scroll-page>
         <footer>
             <div class="grids">
                 <div class="grid1">
@@ -382,10 +385,10 @@
             </div>
             <p>&copy;2020 with Love By <span>Yara</span></p>
         </footer>
-    </div>
+    </scroll-container>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+    <script src="js/js.js"></script>
 </body>
 
 </html>
