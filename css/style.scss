@@ -13,6 +13,10 @@ $colorSection2: rgb(46, 192, 112);
 
 }
 
+.index {
+    z-index: 2;
+}
+
 .toggle {
     .line1 {
         transform: rotate(-45deg) translate(-3px, 8px) !important;
@@ -335,17 +339,55 @@ header {
                 text-shadow: 1px 1px 2px #000000
             }
 
+            .dots {
+                display: flex;
+                flex-direction: row;
+                //display: none;
+
+                a {
+                    width: 25px;
+                    height: 5px;
+                    background-color: black;
+                    margin: 5px;
+                    transition: all 0.5s ease;
+
+                    :hover {
+                        background-color: rgb(65, 64, 64);
+                    }
+                }
+
+            }
+
             .garllery {
                 flex: 1;
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: repeat(4, 260px);
+                grid-template-rows: repeat(2, 250px);
                 column-gap: 18px;
                 row-gap: 20px;
+                box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2x);
 
-                img {
+                .image {
                     width: 100%;
-                    height: 250px;
+                    height: 100%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        //height: 250px;
+                        cursor: pointer;
+                        transition: 0.5s ease;
+
+                    }
+
+                    &:hover {
+
+                        img {
+                            transform: scale(1.4) rotate(15deg);
+                            opacity: 0.8;
+                        }
+                    }
                 }
             }
         }
@@ -692,10 +734,15 @@ header {
         .Container {
             .content7 {
                 .slide {
+                    justify-self: center;
+
                     .garllery {
                         grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: repeat(4, 1fr);
-                        row-gap: 20px;
+                        grid-template-rows: repeat(4, 250px);
+                        row-gap: 5px;
+                        column-gap: 5px;
+
+
                     }
                 }
             }
@@ -819,6 +866,31 @@ header {
 
             }
 
+            #page-6 {
+                .slide {
+                    overflow: hidden;
+
+                    .garllery {
+                        //overflow: hidden;
+                        grid-template-columns: repeat(8, 200px);
+                        grid-template-rows: 200px;
+                        column-gap: 5px;
+                        animation: slideshow 8s linear infinite;
+                    }
+
+                    @keyframes slideshow {
+                        0% {
+                            transform: translateX(0);
+                        }
+
+                        100% {
+                            transform: translateX(-30%);
+                        }
+
+                    }
+                }
+            }
+
             .content9 {
                 h1 {
                     font-size: 33px;
@@ -882,6 +954,8 @@ header {
 
                     .step {
                         flex: 0 0 100%;
+                        font-size: 7px;
+                        padding: 0px 10px;
                     }
                 }
             }
@@ -889,11 +963,16 @@ header {
 
         .content5 {
             .Services {
+
                 display: grid;
                 grid-template-rows: repeat(6, 1fr);
                 grid-template-columns: auto;
                 text-align: center;
                 row-gap: 20px;
+
+                .service {
+                    font-size: 7px;
+                }
             }
         }
 
@@ -908,15 +987,20 @@ header {
 
         }
 
-        #page-6 {
-            .slide {
-                .garllery {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: repeat(4, 1fr);
-                    row-gap: 20px;
-                }
-            }
-        }
+        // #page-6 {
+        //     .slide {
+        //         .garllery {
+        //             grid-template-columns: 200px;
+        //             grid-template-rows: 200px;
+
+        //             // row-gap: 20px;
+        //             .image {
+        //                 grid-area: 1;
+        //             }
+
+        //         }
+        //     }
+        // }
 
         #page-7 {
             .slide {
@@ -945,6 +1029,27 @@ header {
                         grid-row: 4;
                     }
 
+                }
+            }
+        }
+
+        .content9 {
+            padding: 10px 0px;
+
+            .h1 {
+
+                font-size: 26px;
+            }
+
+            .inputs {
+
+                input {
+                    font-size: 14px;
+                }
+
+                .btn1 {
+                    padding: 10px;
+                    font-size: 14px;
                 }
             }
         }

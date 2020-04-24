@@ -40,3 +40,6 @@ const navSlide = () => {
 
 }
 navSlide();
+
+
+
